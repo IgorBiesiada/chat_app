@@ -11,6 +11,7 @@ db.sqlite3
 media/
 staticfiles/
 *.sqlite3-journal
+migrations/
 
 # Env / secrets
 .env

@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,7 +46,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     
     #apps
-    'user'
+    'user',
+    'chat'
 ]
 
 CORSE_ALLOW_CREDENTIALS = True
@@ -81,7 +83,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'config.wsgi.application'
+#WSGI_APPLICATION = 'config.wsgi.application'
+
+ASGI_APPLICATION = 'config.asgi.application'
 
 
 REST_FRAMEWORK = {
