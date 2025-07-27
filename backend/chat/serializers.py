@@ -3,7 +3,7 @@ from rest_framework.serializers import ListSerializer
 from chat.models import ChatRoom
 
 
-class CreateRoomSerializer(serializers.Serializer):
+class CreateRoomSerializer(serializers.ModelSerializer):
     class Meta:
         model = ChatRoom
         fields = ['chatroom_name', 'is_public']
