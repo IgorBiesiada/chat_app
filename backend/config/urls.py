@@ -21,6 +21,7 @@ from user.urls import router
 
 urlpatterns = [
     path('admin/',admin.site.urls),
+    path('', include('sim.urls')),
     path('api/', include('user.urls')),
     path('api/', include('chat.urls'))
 ]
